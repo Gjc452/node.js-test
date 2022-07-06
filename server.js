@@ -54,6 +54,7 @@ var server = http.createServer(function (request, response) {
 });
 
 server.listen(port);
+console.log(process.env.UV_THREADPOOL_SIZE);
 console.log(
   "监听 " +
     port +
